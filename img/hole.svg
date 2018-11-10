@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="133.0325mm"
+   height="43.418125mm"
+   viewBox="0 0 133.0325 43.418125"
+   version="1.1"
+   id="svg1351"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="hole.svg">
+  <defs
+     id="defs1345" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="362.82857"
+     inkscape:cy="24.907128"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="716"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1348">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-9.8349413,-112.00522)">
+    <g
+       transform="matrix(0.26458333,0,0,0.26458333,-3.5000585,-167.50061)"
+       id="g48">
+      <path
+         d="m 301.8,1056.4 c 138.9,0 251.4,36.7 251.4,82 0,45.3 -112.6,82 -251.4,82 -138.8,0 -251.4,-36.7 -251.4,-82 0,-45.2 112.6,-82 251.4,-82"
+         id="path44"
+         inkscape:connector-curvature="0"
+         style="clip-rule:evenodd;fill:#705933;fill-rule:evenodd" />
+      <path
+         d="m 549.2,1153.2 c -21.3,38.3 -123.9,67.3 -247.4,67.3 -123.5,0 -226.1,-29 -247.4,-67.3 21.3,-38.3 123.9,-67.3 247.4,-67.3 123.5,0 226.2,29 247.4,67.3"
+         id="path46"
+         inkscape:connector-curvature="0"
+         style="clip-rule:evenodd;fill:#4f3d1d;fill-rule:evenodd" />
+    </g>
+  </g>
+</svg>
