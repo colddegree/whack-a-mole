@@ -20,7 +20,7 @@ body,
     display: grid;
     grid-template-columns: repeat(3, 18vmin);
     grid-template-rows: repeat(4, 18vmin);
-    grid-gap: 1vmin;
+    grid-gap: 1vmin 5vmin;
     justify-content: center;
 }
 
