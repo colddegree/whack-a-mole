@@ -38,11 +38,12 @@ let score = 0;
         hitboxContainer = cells[i].querySelector(".hitbox-container");
 
         moles[i] = {
-            mole: mole,
+            element: mole,
             hitboxContainer: hitboxContainer,
-            hitbox: hitboxContainer.querySelector(".hitbox")
+            hitbox: hitboxContainer.querySelector(".hitbox"),
+            hidden: true
         };
-        
+
         moles[i].hitbox.addEventListener("click", () => {
             hideMole(moles[i], easeAfterBeingCaughtDuration);
             score++;
@@ -56,15 +57,21 @@ const intervalMilliseconds = easeDuration * 1000 * 3;
 
 setInterval(() => {
     let idx = getRandomInt(0, moles.length - 1);
-    showMole(moles[idx]);
+
+    if (moles[idx].hidden) {
+        changeMoleClass(moles[idx]);
+        showMole(moles[idx]);
+    }
+
     setTimeout(() => {
         hideMole(moles[idx]);
     }, intervalMilliseconds * getRandomArbitrary(0.5, 2));
+
 }, intervalMilliseconds);
 
 
 function showMole(mole, duration = easeDuration) {
-    TweenMax.to(mole.mole, duration, {
+    TweenMax.to(mole.element, duration, {
         backgroundPositionY: "0vmin",
         ease: easeType
     });
@@ -74,10 +81,11 @@ function showMole(mole, duration = easeDuration) {
         },
         ease: easeType
     });
+    mole.hidden = false;
 }
 
 function hideMole(mole, duration = easeDuration) {
-    TweenMax.to(mole.mole, duration, {
+    TweenMax.to(mole.element, duration, {
         backgroundPositionY: "18vmin",
         ease: easeType
     });
@@ -87,6 +95,14 @@ function hideMole(mole, duration = easeDuration) {
         },
         ease: easeType,
     });
+    setInterval(_ => mole.hidden = true, duration * 1000);
+}
+
+function changeMoleClass(mole) {
+    for (let i = 0; i < moleClasses.length; i++) {
+        mole.element.classList.remove(moleClasses[i]);
+    }
+    mole.element.classList.add(moleClasses[getRandomInt(0, moleClasses.length - 1)]);
 }
 
 /**
