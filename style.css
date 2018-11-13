@@ -24,34 +24,58 @@ body,
     justify-content: center;
 }
 
-.hole {
-    /*outline: 0.01vmin solid black;*/
-    background: url("img/hole.svg") no-repeat bottom center;
-    background-size: contain;
-}
-
-.hole > img {
-    width: 18vmin;
-    height: 18vmin;
-}
-
 #score {
     font-size: 3vmin;
     font-family: sans-serif;
     text-align: center;
 }
 
-.builder-mole {
-    background:
-        url("img/moles/builder.svg") no-repeat bottom center,
-        url("img/hole.svg") no-repeat bottom center;
-    background-size: contain, contain;
-    transition: background-position .25s ease-in-out;
+.cell {
+    /*outline: 0.01vmin solid black;*/
+    background: url("img/hole.svg") no-repeat center bottom;
+    background-size: contain;
+    position: relative;
 }
 
-.builder-mole:hover {
-    background:
-            url("img/moles/builder.svg") no-repeat center calc(18vmin * 2),
-            url("img/hole.svg") no-repeat bottom center;
-    background-size: contain, contain;
+.builder-mole,
+.nerd-mole,
+.pirate-mole,
+.hitbox-container,
+.cell::after {
+    width: 18vmin;
+    height: 18vmin;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.builder-mole,
+.nerd-mole,
+.pirate-mole {
+    background: no-repeat center 18vmin;
+    background-size: contain;
+}
+
+.builder-mole {
+    background-image: url("img/moles/builder.svg");
+}
+
+.nerd-mole {
+    background-image: url("img/moles/nerd.svg");
+}
+
+.pirate-mole {
+    background-image: url("img/moles/pirate.svg");
+}
+
+.hitbox {
+    cursor: pointer;
+    opacity: 0;
+}
+
+.cell::after {
+    content: "";
+    background: url("img/obstacle.svg") no-repeat center bottom;
+    background-size: contain;
+    pointer-events: none;
 }
