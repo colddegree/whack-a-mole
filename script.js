@@ -11,7 +11,8 @@ const hitboxContainerOuterHTML =
 const moleClasses = [
     "builder-mole",
     "nerd-mole",
-    "pirate-mole"
+    "pirate-mole",
+    "klevch"
 ];
 
 const easeDuration = .25;

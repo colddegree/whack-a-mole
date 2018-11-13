@@ -31,7 +31,6 @@ body,
 }
 
 .cell {
-    /*outline: 0.01vmin solid black;*/
     background: url("img/hole.svg") no-repeat center bottom;
     background-size: contain;
     position: relative;
@@ -40,6 +39,7 @@ body,
 .builder-mole,
 .nerd-mole,
 .pirate-mole,
+.klevch,
 .hitbox-container,
 .cell::after {
     width: 18vmin;
@@ -51,7 +51,8 @@ body,
 
 .builder-mole,
 .nerd-mole,
-.pirate-mole {
+.pirate-mole,
+.klevch {
     background: no-repeat center 18vmin;
     background-size: contain;
 }
@@ -68,8 +69,12 @@ body,
     background-image: url("img/moles/pirate.svg");
 }
 
+.klevch {
+    background-image: url("img/klevch.png");
+}
+
 .hitbox {
-    cursor: pointer;
+    cursor: crosshair;
     opacity: 0;
 }
 
